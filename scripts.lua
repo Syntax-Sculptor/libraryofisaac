@@ -34,6 +34,7 @@ local TSIL_SCRIPTS = {
 "CustomCallbacks.FamiliarCallbacks.FamiliarInitLateCallback",
 "CustomCallbacks.FamiliarCallbacks.FamiliarStateChangedCallback",
 "CustomCallbacks.FilterCallbacks.EntityDMGFilter",
+"CustomCallbacks.FilterCallbacks.PostEntityDMGFilter",
 "CustomCallbacks.FilterCallbacks.NPCCollisionFilterCallback",
 "CustomCallbacks.FilterCallbacks.NPCDeathFilterCallback",
 "CustomCallbacks.FilterCallbacks.NPCInitFilterCallback",
