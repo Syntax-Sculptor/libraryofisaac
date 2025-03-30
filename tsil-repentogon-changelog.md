@@ -10,6 +10,7 @@
 
 - `TSIL.Collectibles.SetCollectibleGlitched` no longer temporarily gives TMTrainer to the player.
 - `TSIL.EntitySpecific.GetSlots` now returns an `EntitySlot` table.
+- `TSIL.EntitySpecific.SpawnSlot` now returns an `EntitySlot`.
 
 ## Enums
 The following enums have been renamed to not conflict with ones added in Repentogon:
