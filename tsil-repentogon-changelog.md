@@ -46,3 +46,4 @@ The following enums have been added in Repentogon:
 - `TSIL.Run.CanRunUnlockAchievements` has been replaced by `Game:AchievementUnlocksDisallowed()`
 - `TSIL.Collectibles.IsBlindCollectible` has been replaced by `EntityPickup:IsBlind()`.
 - `TSIL.Collectibles.TryRemoveCollectible` has been replaced by `EntityPickup:TryRemoveCollectible()`.
+- `TSIL.Debug.GetTime` has been removed due to the socket library not working in REPENTOGON. Use `Isaac.GetTime()` instead.

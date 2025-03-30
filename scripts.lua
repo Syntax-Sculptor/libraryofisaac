@@ -217,7 +217,6 @@ local TSIL_SCRIPTS = {
 "CustomCallbacks.SlotCallbacks.SlotStateChangedCallback",
 "CustomCallbacks.TearCallbacks.TearInitLateCallback",
 "CustomCallbacks.TearCallbacks.TearInitVeryLateCallback",
-"Debug.GetTime",
 "Debug.GetTraceback",
 "Debug.IsDebugModeActive",
 "Debug.IsLuaDebugEnabled",
