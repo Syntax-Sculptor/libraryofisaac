@@ -279,15 +279,6 @@ end
 function TSIL.Collectibles.GetCollectiblesWithTag(...)
 end
 
---- Returns true if the collectible has a red question mark sprite.
---- 
---- Note that this function will not work properly in a render callback
---- with the render mode set to `RenderMode.WATER_REFLECT`.
----@param collectible EntityPickup
----@return boolean
-function TSIL.Collectibles.IsBlindCollectible(collectible)
-end
-
 --- Returns true if the collectible is a glitched item, like because of the effect of TMTRAINER.
 ---@param collectible EntityPickup
 ---@return boolean
