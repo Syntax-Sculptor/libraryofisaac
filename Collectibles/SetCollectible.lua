@@ -12,26 +12,19 @@ end
 
 --- Helper function to change a collectible into a glitched one.
 ---@param collectible EntityPickup
-function TSIL.Collectibles.SetCollectibleGlitched(collectible)
-    if collectible.Type ~= EntityType.ENTITY_PICKUP or
-    collectible.Variant ~= PickupVariant.PICKUP_COLLECTIBLE then
-        error("The SetCollectibleGlitched function was given a non collectible: " .. collectible.Type)
+---@param seed integer? Optional. Default is the collectible's `InitSeed`
+function TSIL.Collectibles.SetCollectibleGlitched(collectible, seed)
+    assert(collectible:ToPickup() ~= nil, "SetCollectibleGlitched was given a non EntityPickup type: " .. collectible.Type)
+    assert(collectible.Variant == PickupVariant.PICKUP_COLLECTIBLE, "SetCollectibleGlitched was given a non collectible: " .. collectible.Variant)
+
+    if collectible.SubType == 0 then
+        return
     end
 
-    local haveTMTRAINER = PlayerManager.AnyoneHasCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
+    seed = seed or collectible.InitSeed
 
-    if not haveTMTRAINER then
-        Isaac.GetPlayer(0):AddCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
-    end
-
-    local itemPool = Game():GetItemPool()
-    local collectibleType = itemPool:GetCollectible(ItemPoolType.POOL_TREASURE)
-
-    TSIL.Collectibles.SetCollectibleSubType(collectible, collectibleType)
-
-    if not haveTMTRAINER then
-        Isaac.GetPlayer(0):RemoveCollectible(CollectibleType.COLLECTIBLE_TMTRAINER)
-    end
+    local glitchedItem = ProceduralItemManager.CreateProceduralItem(seed, 1)
+    collectible:Morph(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, glitchedItem, true, true, true)
 end
 
 

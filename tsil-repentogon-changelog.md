@@ -6,6 +6,10 @@
 - Added more grid entity specific functions for the new grid entity types.
 - Added `TSIL.IsaacAPIClass.IsColorModifier` and `TSIL.IsaacAPIClass.IsSlot`.
 
+## Fixes
+
+- `TSIL.Collectibles.SetCollectibleGlitched` no longer temporarily gives TMTrainer to the player.
+
 ## Enums
 The following enums have been renamed to not conflict with ones added in Repentogon:
 - `HealthType` -> `PlayerHeartType`.
@@ -40,3 +44,4 @@ The following enums have been added in Repentogon:
 - `TSIL.Players.GetPlayers()` has been replaced by `PlayerManager.GetPlayers()`.
 - `TSIL.Players.RegisterCharacterHealthConversion()` has been replaced by `MC_PLAYER_GET_HEALTH_TYPE`.
 - `TSIL.Run.CanRunUnlockAchievements` has been replaced by `Game:AchievementUnlocksDisallowed()`
+- `TSIL.Collectibles.IsBlindCollectible` has been replaced by `EntityPickup:IsBlind()`.
