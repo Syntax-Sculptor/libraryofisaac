@@ -31,8 +31,7 @@ end
 --- Helper function to change the collectible in a pedestal.
 ---
 --- If `COLLECTIBLE_NULL` is given as the new subtype, it'll try removing the item,
---- as if the player had already picked it. Check `TSIL.Collectibles.TryRemoveCollectible()`
---- for more information.
+--- as if the player had already picked it.
 ---@param collectible EntityPickup
 ---@param newSubType CollectibleType
 function TSIL.Collectibles.SetCollectibleSubType(collectible, newSubType)
@@ -42,7 +41,7 @@ function TSIL.Collectibles.SetCollectibleSubType(collectible, newSubType)
     end
 
     if newSubType == CollectibleType.COLLECTIBLE_NULL then
-        TSIL.Collectibles.TryRemoveCollectible(collectible)
+        collectible:TryRemoveCollectible()
         return
     end
 

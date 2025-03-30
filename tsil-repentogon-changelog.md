@@ -45,3 +45,4 @@ The following enums have been added in Repentogon:
 - `TSIL.Players.RegisterCharacterHealthConversion()` has been replaced by `MC_PLAYER_GET_HEALTH_TYPE`.
 - `TSIL.Run.CanRunUnlockAchievements` has been replaced by `Game:AchievementUnlocksDisallowed()`
 - `TSIL.Collectibles.IsBlindCollectible` has been replaced by `EntityPickup:IsBlind()`.
+- `TSIL.Collectibles.TryRemoveCollectible` has been replaced by `EntityPickup:TryRemoveCollectible()`.

@@ -318,15 +318,6 @@ end
 function TSIL.Collectibles.SetCollectibleSubType(collectible, newSubType)
 end
 
---- Empties an item pedestal as if a player had already
---- picked it up.
----
---- If it's a shop item, it removes it completely.
----@param collectible EntityPickup
----@return boolean Whether the collectible could be emptied.
-function TSIL.Collectibles.TryRemoveCollectible(collectible)
-end
-
 ---Copies a color.
 ---@param color Color
 ---@return Color

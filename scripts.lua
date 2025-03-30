@@ -126,7 +126,6 @@ local TSIL_SCRIPTS = {
 "Collectibles.GetCollectibles",
 "Collectibles.IsCollectible",
 "Collectibles.SetCollectible",
-"Collectibles.TryRemoveCollectible",
 "Color.CopyColor",
 "Color.GetRandomColor",
 "Color.HexColor",
