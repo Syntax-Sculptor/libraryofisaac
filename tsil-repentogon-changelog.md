@@ -5,6 +5,64 @@
 - Added `POST_SLOT_STATE_CHANGED`.
 - Added more grid entity specific functions for the new grid entity types.
 - Added `TSIL.IsaacAPIClass.IsColorModifier` and `TSIL.IsaacAPIClass.IsSlot`.
+- Added `TSIL.CustomCallback.POST_ENTITY_TAKE_DMG_FILTER`.
+- Added `TSIL.CustomCallback.POST_BOMB_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_BOMB_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.PRE_EFFECT_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.POST_FAMILIAR_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_FAMILIAR_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.GET_FOLLOWER_PRIORITY_FILTER`.
+- Added `TSIL.CustomCallback.POST_KNIFE_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_KNIFE_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.PRE_LASER_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_LASER_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_NPC_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.NPC_PICK_TARGET_FILTER`.
+- Added `TSIL.CustomCallback.POST_NPC_DARK_RED_CHAMPION_REGEN_FILTER`.
+- Added `TSIL.CustomCallback.EVALUATE_FAMILIAR_MULTIPLIER_FILTER`.
+- Added `TSIL.CustomCallback.PRE_NPC_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.PRE_NPC_SPLIT_FILTER`.
+- Added `TSIL.CustomCallback.POST_PICKUP_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PICKUP_COMPOSTED_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PICKUP_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.POST_PICKUP_SHOP_PURCHASE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PICKUP_VOIDED_ABYSS_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PICKUP_VOIDED_FILTER`.
+- Added `TSIL.CustomCallback.PRE_SLOT_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_SLOT_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_SLOT_CREATE_EXPLOSION_DROPS_FILTER`.
+- Added `TSIL.CustomCallback.POST_SLOT_CREATE_EXPLOSION_DROPS_FILTER`.
+- Added `TSIL.CustomCallback.POST_SLOT_INIT_FILTER`.
+- Added `TSIL.CustomCallback.PRE_SLOT_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.POST_SLOT_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.PRE_SLOT_SET_PRIZE_COLLECTIBLE_FILTER`.
+- Added `TSIL.CustomCallback.POST_SLOT_SET_PRIZE_COLLECTIBLE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_SLOT_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.POST_SLOT_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.POST_TEAR_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_TEAR_RENDER_FILTER`.
+- Added `TSIL.CustomCallback.PRE_TEAR_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_TEAR_COLLISION_GRID_FILTER`.
+- Added `TSIL.CustomCallback.PRE_FAMILIAR_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_FAMILIAR_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_BOMB_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_BOMB_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PICKUP_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_PICKUP_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PROJECTILE_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_PROJECTILE_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.PRE_NPC_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_NPC_GRID_COLLISION_FILTER`.
+- Added `TSIL.CustomCallback.POST_PROJECTILE_DEATH_FILTER`.
+- Added `TSIL.CustomCallback.POST_TEAR_DEATH_FILTER`.
+- Added `TSIL.CustomCallback.PRE_TEAR_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_FAMILIAR_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_BOMB_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PICKUP_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_KNIFE_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_PROJECTILE_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_LASER_UPDATE_FILTER`.
+- Added `TSIL.CustomCallback.PRE_EFFECT_UPDATE_FILTER`.
 
 ## Fixes
 
