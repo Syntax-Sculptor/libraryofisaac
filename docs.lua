@@ -304,7 +304,8 @@ end
 
 --- Helper function to change a collectible into a glitched one.
 ---@param collectible EntityPickup
-function TSIL.Collectibles.SetCollectibleGlitched(collectible)
+---@param seed integer? Optional. Default is the collectible's `InitSeed`
+function TSIL.Collectibles.SetCollectibleGlitched(collectible, seed)
 end
 
 --- Helper function to change the collectible in a pedestal.
