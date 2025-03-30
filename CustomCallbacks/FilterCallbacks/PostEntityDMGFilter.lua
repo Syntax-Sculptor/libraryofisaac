@@ -1,6 +1,6 @@
 --##POST_ENTITY_TAKE_DMG_FILTER
 TSIL.__RegisterCustomCallback(
-    TSIL.Enums.CustomCallback.ENTITY_TAKE_DMG_FILTER,
+    TSIL.Enums.CustomCallback.POST_ENTITY_TAKE_DMG_FILTER,
     TSIL.Enums.CallbackReturnMode.NONE,
     TSIL.Enums.CallbackOptionalArgType.ENTITY_TYPE_VARIANT_SUBTYPE
 )
